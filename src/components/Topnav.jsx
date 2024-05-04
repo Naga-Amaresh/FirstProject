@@ -23,7 +23,7 @@ const Topnav = ({fun}) => {
   
 
   return (
-    <div className={`sm:relative sm:${pathname==='/'?"left-[20%]":"left-[0%]"}   h-[10vh] w-full sm:w-[100%] sm:h-[10vh] sm:flex sm:items-center  px-[10vw] py-6 z-[99]`}>
+    <div className={`sm:relative ${pathname=='/' ||pathname==" "?"sm:left-[20%]":"sm:left-[0%]"}   h-[10vh] w-full sm:w-[100%] sm:h-[10vh] sm:flex sm:items-center  px-[10vw] py-6 z-[99]`}>
       <div className="sm:flex sm:items-center sm:justify-start">
       {pathname==='/' && <i
             onClick={fun}

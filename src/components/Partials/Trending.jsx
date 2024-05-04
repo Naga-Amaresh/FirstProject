@@ -69,7 +69,7 @@ const Trending = () => {
         <h1 className="text-md sm:text-xl ">
           <i
             onClick={() => navigate(-1)}
-            className="text-4xl relative sm:left-[0%] left-[-120%]  sm:cursor-pointer sm:hover:text-[#E50914] ri-arrow-left-line"
+            className="text-xl relative sm:left-[0%] left-[-120%]  sm:cursor-pointer sm:hover:text-[#E50914] ri-arrow-left-line"
           ></i>
           <strong className="sm:inline hidden">Trending</strong>{" "}
           <span className="sm:inline hidden absolute left-[11%] top-[50%] -translate-y-[50%] sm:text-sm sm:text-zinc-400 font-semibold ">
