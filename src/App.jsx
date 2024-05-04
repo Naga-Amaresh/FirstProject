@@ -13,16 +13,26 @@ import PersonDetails from "./components/Partials/PersonDetails";
 import Trailer from "./components/Partials/Trailer";
 import PageNotFound from "./components/PageNotFound";
 import Person from "./components/Partials/Person";
+import SignIn from "./components/Partials/SignIn";
+import MovieGenres from "./components/Partials/MovieGenres";
+import TvGenres from "./components/Partials/TvGenres";
+// import LocomotiveScroll from 'locomotive-scroll';
+
+
 
 const App = () => {
+  // const locomotiveScroll = new LocomotiveScroll();
   return (
     <div
-      className="w-full h-screen bg-[#000000] text-[#FFFFFF]
+      className="h-screen w-[100vw]   sm:w-full sm:h-screen bg-[#000000] text-[#FFFFFF]
       "
     >
       <Routes>
+        <Route path="/signin" element={<SignIn/>} />
         <Route exact path="/" element={<Home />} />
         <Route path="/trending" element={<Trending />} />
+        <Route path="/moviegenres" element={<MovieGenres/>} />
+        <Route path="/tvgenres" element={<TvGenres/>} />
         <Route path="/popular" element={<Popular />} />
         <Route path="/movie" element={<Movies />} />
         <Route path="/movie/moviedetails/:id" element={<MovieDetails />}>

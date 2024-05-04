@@ -15,3 +15,6 @@
     background-color: grey;
     cursor: pointer;
 }
+*::-webkit-scrollbar{
+    display: none;
+}

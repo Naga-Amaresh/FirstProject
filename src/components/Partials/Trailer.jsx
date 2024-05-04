@@ -13,10 +13,10 @@ const Trailer = () => {
   return  (
     <div style={{
         backgroundColor: "rgba(0,0,0,0.9)",
-    }} className='fixed top-0 left-0 z-[99] h-screen w-full flex items-center justify-center'>
+    }} className='fixed h-screen w-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 sm:-translate-x-0 sm:-translate-y-0 sm:top-0 sm:left-0 sm:z-[99] sm:h-screen sm:w-full flex items-center justify-center'>
 
-        {ytvidoes ? (<ReactPlayer controls height={600} width={1200} url={`https://www.youtube.com/watch?v=${ytvidoes.key}`} />):<PageNotFound/>}
-        <Link onClick={()=>navigate(-1)}><i className="absolute top-10 right-20 text-2xl text-red-600 ri-close-large-fill"></i></Link>
+        {ytvidoes ? (<span className='sm:h-[90vh] sm:min-w-[80vw] '><ReactPlayer  height={"100%"} width={"100%"} url={`https://www.youtube.com/watch?v=${ytvidoes.key}`} /></span>):<PageNotFound/>}
+        <Link onClick={()=>navigate(-1)}><i className="top-1/3  absolute sm:top-10 sm:right-20 sm:text-2xl sm:text-red-600 ri-close-large-fill"></i></Link>
     </div>
   )
 }

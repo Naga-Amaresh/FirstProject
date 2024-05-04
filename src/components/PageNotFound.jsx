@@ -6,7 +6,7 @@ const PageNotFound = () => {
         <div className='h-screen w-full flex items-center justify-center bg-black'>
             <img className='h-[50%] object-cover' src={Page} alt="" />
         </div>
-      )
+    )
 }
 
 export default PageNotFound
