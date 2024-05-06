@@ -18,14 +18,13 @@ import MovieGenres from "./components/Partials/MovieGenres";
 import TvGenres from "./components/Partials/TvGenres";
 // import LocomotiveScroll from 'locomotive-scroll';
 
-
-
 const App = () => {
   // const locomotiveScroll = new LocomotiveScroll();
   return (
     <div
       className="h-screen w-[100vw]   sm:w-full sm:h-screen bg-[#000000] text-[#FFFFFF]
       "
+    
     >
       <Routes>
         <Route path="/signin" element={<SignIn/>} />

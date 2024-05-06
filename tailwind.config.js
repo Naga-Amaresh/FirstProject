@@ -4,9 +4,14 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  
   theme: {
     extend: {},
+    fontFamily: {
+      'sans': ['Roboto', 'Poppins', 'Montserrat','Open_sans','Lato'],
+  },
   },
   plugins: [],
 }
+
 

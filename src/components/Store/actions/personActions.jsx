@@ -8,7 +8,7 @@ export const asyncloadperson = (id) => async(dispatch,getState)=>{
         const externalId = await axios.get(`/person/${id}/external_ids`);
         const combinedcredits = await axios.get(`/person/${id}/combined_credits`);
         const tvcredits = await axios.get(`/person/${id}/tv_credits`);
-        const moviecredits = await axios.get(`/person/${id}/movie_credits`);
+        const moviecredits = await axios.get(`/person/${id}/movie_credits`);    
         const theUltimateDetails ={
             detail:detail.data,
             externalId:externalId.data,
