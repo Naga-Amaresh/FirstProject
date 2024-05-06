@@ -68,12 +68,12 @@ const About = () => {
             membership.
           </h2>
             <form onSubmit={(e) => e.preventDefault()} id="form">
-              <input id="email"
+              <input id="emailId"
                 className="px-4 sm:w-[20vw] py-2 outline-none border-[1px] border-zinc-400 rounded-md mr-2 bg-transparent"
                 type="email"
                 placeholder="Email"
               />
-              <input id="Submit"
+              <input id="secIdSubmit"
                 className=" sm:w-[20vw] border-white border outline-none px-4 py-2 rounded bg-red-600 sm:text-white border-none sm:text-md font-semibold cursor-pointer transition ease-in-out"
                 type="submit"
               />

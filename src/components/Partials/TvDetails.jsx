@@ -139,13 +139,13 @@ const TvDetails = () => {
           )):"No Info"}
         </div>
       </div>
-        <div className="sm:h-[60vh] sm:w-full sm:overflow-hidden px-10 sm:bg-transparent bg-black sm:py-0 py-4 rounded-t-xl">
+        <div className="sm:h-[60vh]  sm:w-full sm:overflow-hidden px-6 sm:px-10  sm:bg-transparent bg-black sm:py-0 py-4 rounded-t-xl">
           <h1 className="sm:text-2xl font-bold py-4 text-xl">Seasons</h1>
-          <div className="relative sm:w-[25vw] sm:h-[80%] h-[50vh] w-full  sm:overflow-x-auto sm:overflow-y-hidden flex gap-4 shrink-0 flex-nowrap py-5">
+          <div className="relative  overflow-x-auto  sm:w-full sm:h-[80%] h-[50vh] w-full  sm:overflow-x-auto sm:overflow-y-hidden flex gap-4 shrink-0 flex-nowrap py-5">
                 {info.detail.seasons.length > 0 ? info.detail.seasons.map((b, i) => (
                     <Link to={`/${b.media_type}/${b.media_type}details/${b.id}`} key={b.id}
                     
-                        className="sm:h-[100%] h-full w-3/4 sm:min-w-[20%] overflow-hidden bg-zinc-900 block rounded-lg border-none outline-none sm:overflow-hidden"
+                        className="sm:h-[100%] h-full min-w-[60vw]  sm:min-w-[20%] overflow-hidden bg-zinc-900 block rounded-lg border-none outline-none sm:overflow-hidden"
                     >
                         <div className="sm:h-[50%] h-32  w-full sm:w-full bg-zinc-400"  style={{
                             backgroundImage: `linear-gradient(to top,rgba(0,0,0,0.7),rgba(0,0,0,0.3),rgba(0,0,0,0)),url(https://image.tmdb.org/t/p/original/${b.backdrop_path ||
@@ -165,11 +165,11 @@ const TvDetails = () => {
                                     b.original_title ||
                                     b.title}
                             </h1>
-                            <p className="sm:h-8 sm:text-sm font-regular sm:text-zinc-400 sm:w-[80%] my-2 leading-none">
+                            <p className=" sm:text-sm font-regular sm:text-zinc-400 sm:w-[80%] leading-none">
                                 {b.overview ? b.overview.slice(0,30) :"No Info"}...
                                 <span className="sm:text-[#E50914]">more</span>
                             </p>
-                            <span className="sm:my-2 relative left-0 top-10 sm:top-0 sm:px-4 sm:py-2 bg-[#E50914] rounded sm:text-white sm:text-xs ">
+                            <span className=" relative sm:left-0 sm:top-4 top-10 sm:bottom-20 px-3 py-2 sm:px-4 sm:py-2 bg-[#E50914] rounded sm:text-white sm:text-xs text-md ">
                                 Watch Trailer
                             </span>
                         </div>
@@ -177,7 +177,7 @@ const TvDetails = () => {
                 )):<h1 className="sm:text-4xl sm:text-white font-bold mt-4">Nothing to show dude</h1>}
             </div>
         </div>
-        <div className="sm:h-[60vh] sm:w-full sm:overflow-hidden px-10 sm:bg-transparent bg-black sm:px-16 sm:py-0 py-4 ">
+        <div className="sm:h-[60vh] sm:w-full sm:overflow-hidden pl-12 pr-6 sm:bg-transparent bg-black sm:pr-8 sm:pl-14 sm:py-0 py-4 ">
           <h1 className="sm:text-2xl font-bold sm:py-4 text-xl my-10 sm:my-0">Recommendations & Similarities</h1>
         <Horizantal data={
           info.recommendations.length > 0  ? info.recommendations : info.similar

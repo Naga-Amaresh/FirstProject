@@ -29,7 +29,7 @@ const Topnav = ({fun}) => {
             onClick={fun}
             className={`sm:text-xl ${Isval?"inline":"hidden"} relative sm:-left-[65%] -left-[8%] text-xl cursor-pointer ri-menu-fill`}
           ></i>}
-      <input id="query"
+      <input id="firstquery"
         value={query}
         onChange={(e) => setquery(e.target.value)}
         className="hidden sm:inline sm:py-2 sm:px-4 bg-transparent border-[1px] border-zinc-400 sm:rounded-full sm:outline-none sm:w-[40vw]"
@@ -60,7 +60,7 @@ const Topnav = ({fun}) => {
           backgroundColor: "rgba(0,0,0,0.9)",
         }} className={`sm:hidden  ${Isval?"hidden":"block"} h-[100vh] pointer-events-all overflow-y-hidden w-[100vw] fixed z-[400] left-0 top-0 `}>
           <i onClick={()=>setIsval(true)} className="text-[8vw] text-zinc-400 relative left-5  top-5 ri-arrow-left-line"></i>
-        <input id="query2"
+        <input id="secquery"
           value={query}
           onChange={(e) => setquery(e.target.value)}
           className="bg-transparent relative top-4 h-10 max-w-60 left-10 px-3 py-2 w-[80%] border-zinc-400 border-[1px] rounded-full"
